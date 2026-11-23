@@ -1,121 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Professional portfolio covering IT operations, cybersecurity, digital forensics, networking and technical projects.">
-  <meta name="theme-color" content="#0b1424">
-  <title>Your Full Name | IT, Cybersecurity & Digital Forensics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Jeremiah Koomson, Computer Science graduate with an interest in Cybersecurity, Digital Forensics and IT Operations.">
+  <title>Jeremiah Koomson | IT & Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Home"><span class="brand-mark">Y</span><span>Your Name<span class="brand-dot">.</span></span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
-      <a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact" class="nav-contact">Contact</a>
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">JK<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#experience">Experience</a><a href="#certifications">Certifications</a><a class="nav-cta" href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero section" id="home">
+    <section class="hero container" id="home">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> IT OPERATIONS · CYBERSECURITY · DIGITAL FORENSICS</p>
-        <h1>Building reliable systems.<br><span>Investigating with purpose.</span></h1>
-        <p class="hero-text">I am a Computer Science graduate and MSc Cybersecurity &amp; Digital Forensics candidate, developing practical capability across IT operations, networking, cybersecurity and digital investigations.</p>
+        <p class="eyebrow">COMPUTER SCIENCE · CYBERSECURITY · IT OPERATIONS</p>
+        <h1>Jeremiah<br><span>Koomson</span></h1>
+        <p class="hero-lead">Building practical knowledge across IT operations, cybersecurity and digital forensics.</p>
+        <p class="hero-text">I am a Computer Science graduate and MSc Cybersecurity &amp; Digital Forensics student with an interest in secure systems, technical operations, networking and digital investigations.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
-          <a class="button button-secondary" href="#contact">Get in touch</a>
-        </div>
-        <div class="hero-meta"><span>Based in Ghana</span><span class="meta-separator"></span><span>Open to IT opportunities</span></div>
-      </div>
-      <div class="hero-panel" aria-label="Professional focus areas">
-        <div class="panel-top"><span>FOCUS AREAS</span><span class="panel-live">● LEARNING &amp; BUILDING</span></div>
-        <div class="focus-row"><span class="focus-icon">01</span><div><strong>IT Operations</strong><small>Systems · Infrastructure · Support</small></div><span class="focus-arrow">↗</span></div>
-        <div class="focus-row"><span class="focus-icon">02</span><div><strong>Cybersecurity</strong><small>Security fundamentals · Risk · Defence</small></div><span class="focus-arrow">↗</span></div>
-        <div class="focus-row"><span class="focus-icon">03</span><div><strong>Digital Forensics</strong><small>Evidence · Investigation · Documentation</small></div><span class="focus-arrow">↗</span></div>
-        <div class="panel-bottom"><span>CONTINUOUS DEVELOPMENT</span><span>GH / 2026</span></div>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="Areas of interest"><div>NETWORKING <b>✳</b> SYSTEMS ADMINISTRATION <b>✳</b> DIGITAL FORENSICS <b>✳</b> SECURITY OPERATIONS <b>✳</b> IT SUPPORT <b>✳</b> </div></section>
-
-    <section class="section content-section" id="about">
-      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>Technology with a practical mindset.</h2></div>
-      <div class="about-grid">
-        <p class="lead">I enjoy understanding how technology works, keeping systems dependable and learning how digital evidence can support investigations.</p>
-        <div class="about-copy">
-          <p>My background combines a BSc in Computer Science with postgraduate study in Cybersecurity &amp; Digital Forensics. I am building hands-on experience through infrastructure and security lab work, alongside experience supporting insurance operations and document processes.</p>
-          <p>I am interested in opportunities across IT operations, technical support, networking, systems administration, cybersecurity and digital forensics. I value careful documentation, integrity and continuous learning.</p>
+          <a class="button primary" href="#projects">Explore my work</a>
+          <a class="button secondary" href="#contact">Get in touch</a>
         </div>
       </div>
+      <aside class="hero-panel">
+        <div class="panel-top"><span class="status-dot"></span> AREAS OF INTEREST</div>
+        <div class="focus-item"><span>01</span><div><strong>Digital Forensics</strong><small>Evidence handling and digital investigations</small></div></div>
+        <div class="focus-item"><span>02</span><div><strong>Cybersecurity</strong><small>Security fundamentals and practical learning</small></div></div>
+        <div class="focus-item"><span>03</span><div><strong>IT Operations</strong><small>Systems, networks and technical support</small></div></div>
+        <div class="panel-foot">Curious by nature. Practical by approach.</div>
+      </aside>
     </section>
 
-    <section class="section content-section" id="skills">
-      <div class="section-heading"><p class="eyebrow">02 / CAPABILITIES</p><h2>Areas I am developing.</h2><p class="section-intro">A practical snapshot of my current technical interests and learning. This list is intentionally focused on areas supported by my education and lab work.</p></div>
-      <div class="skill-grid">
-        <article class="skill-card"><span class="card-index">A</span><h3>IT &amp; Systems</h3><p>Windows Server fundamentals, Active Directory lab administration, Windows client environments and technical documentation.</p><div class="tags"><span>Windows Server</span><span>Active Directory</span><span>IT Operations</span></div></article>
-        <article class="skill-card"><span class="card-index">B</span><h3>Networking</h3><p>Computer networking fundamentals, network services, connectivity and practical lab environments.</p><div class="tags"><span>Networking</span><span>Network Services</span><span>Infrastructure</span></div></article>
-        <article class="skill-card"><span class="card-index">C</span><h3>Cybersecurity</h3><p>Cybersecurity foundations, security awareness, learning through controlled lab exercises and structured investigation.</p><div class="tags"><span>Security Fundamentals</span><span>Kali Linux Lab</span><span>Risk Awareness</span></div></article>
-        <article class="skill-card"><span class="card-index">D</span><h3>Digital Forensics</h3><p>Academic focus on digital forensics, evidence handling principles and developing investigation skills.</p><div class="tags"><span>Digital Evidence</span><span>Forensic Learning</span><span>Documentation</span></div></article>
+    <section class="section section-white" id="about">
+      <div class="container narrow">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Technology, systems and continuous learning.</h2>
+        <p class="section-lead">My academic background in Computer Science and postgraduate studies in Cybersecurity &amp; Digital Forensics have shaped my interest in how systems work, how they can be secured, and how digital evidence can be examined responsibly.</p>
+        <p>I enjoy building practical skills through hands-on labs and structured learning. I am interested in opportunities where I can contribute to IT operations, technical support, networking, cybersecurity and digital forensics while continuing to develop professionally.</p>
       </div>
     </section>
 
-    <section class="section content-section" id="projects">
-      <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Learning by building.</h2><p class="section-intro">These entries describe the home-lab work and technical environments I have worked on. Add screenshots, diagrams and write-ups as each project develops.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-feature">
-          <div class="project-visual visual-server"><div class="server-stack"><i></i><i></i><i></i></div><span>VIRTUALISATION LAB</span></div>
-          <div class="project-body"><div class="project-label">01 · INFRASTRUCTURE</div><h3>Proxmox virtualisation environment</h3><p>Set up a home virtualisation environment on a Dell Precision workstation to host and manage learning systems.</p><div class="tags"><span>Proxmox</span><span>Virtualisation</span><span>Home Lab</span></div><p class="project-note">Next: add a network diagram, configuration notes and lessons learned.</p></div>
-        </article>
-        <article class="project-card">
-          <div class="project-visual visual-directory"><div class="directory-node">AD</div><div class="directory-lines"><i></i><i></i><i></i></div><span>IDENTITY &amp; ACCESS LAB</span></div>
-          <div class="project-body"><div class="project-label">02 · SYSTEMS ADMINISTRATION</div><h3>Windows Server &amp; Active Directory</h3><p>Created a Windows Server 2022 domain controller, connected a Windows 11 client and practised directory and group management.</p><div class="tags"><span>Windows Server 2022</span><span>Active Directory</span><span>Windows 11</span></div></div>
-        </article>
-        <article class="project-card">
-          <div class="project-visual visual-security"><div class="terminal-window"><div class="terminal-bar"><i></i><i></i><i></i></div><code>$ lab environment<br><em>controlled practice_</em></code></div><span>SECURITY LEARNING</span></div>
-          <div class="project-body"><div class="project-label">03 · SECURITY PRACTICE</div><h3>Kali Linux learning environment</h3><p>Use Kali Linux in virtual machines for guided cybersecurity learning and controlled practical exercises.</p><div class="tags"><span>Kali Linux</span><span>Virtual Machines</span><span>Lab Practice</span></div><p class="project-note">Only document exercises actually completed and the findings observed.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section content-section" id="experience">
-      <div class="section-heading"><p class="eyebrow">04 / EXPERIENCE</p><h2>Professional experience.</h2></div>
-      <article class="timeline-card">
-        <div class="timeline-date">NATIONAL SERVICE</div>
-        <div class="timeline-content"><h3>Coronation Insurance</h3><p class="role">National Service · Insurance Operations Support</p><p>Supported day-to-day insurance operations, including processing insurance business for policy issuance and payment workflows, handling third-party policy processes, preparing client documents, printing comprehensive insurance certificates, and maintaining files and records.</p><div class="tags"><span>Operations Support</span><span>Document Processing</span><span>Records Management</span><span>Client Documentation</span></div></div>
-      </article>
-      <p class="disclaimer">Experience is described in the context of National Service duties and does not imply a cybersecurity or engineering job title.</p>
-    </section>
-
-    <section class="section content-section" id="education">
-      <div class="section-heading"><p class="eyebrow">05 / EDUCATION &amp; CERTIFICATIONS</p><h2>Education and continued learning.</h2></div>
-      <div class="credentials-grid">
-        <div class="credential-column"><h3>Education</h3>
-          <article class="credential"><span class="credential-year">2026 · FINAL SEMESTER</span><h4>MSc Cybersecurity &amp; Digital Forensics</h4><p>Ghana Institute of Management and Public Administration (GIMPA)</p><small>Final examinations scheduled for November 2026. Update this entry when the degree is officially awarded.</small></article>
-          <article class="credential"><span class="credential-year">COMPLETED · DEC 2025</span><h4>BSc Computer Science</h4><p>Regent University College of Science and Technology</p></article>
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow">02 / SKILLS &amp; INTERESTS</p>
+        <h2>Areas I am developing</h2>
+        <div class="skill-grid">
+          <article class="skill-card"><div class="card-number">01</div><h3>IT &amp; Systems</h3><p>Windows Server fundamentals, Active Directory lab administration, virtualisation and operating system concepts.</p></article>
+          <article class="skill-card"><div class="card-number">02</div><h3>Networking</h3><p>Network fundamentals, addressing, switching concepts, connectivity and troubleshooting practice.</p></article>
+          <article class="skill-card"><div class="card-number">03</div><h3>Cybersecurity</h3><p>Security fundamentals, threat awareness, access management and practical security learning.</p></article>
+          <article class="skill-card"><div class="card-number">04</div><h3>Digital Forensics</h3><p>Academic and practical development in digital investigations, evidence concepts and forensic workflows.</p></article>
         </div>
-        <div class="credential-column"><h3>Certifications</h3>
-          <article class="credential"><span class="credential-year">PROFESSIONAL CERTIFICATE</span><h4>Google Data Analytics Professional Certificate</h4><p>Google</p></article>
-          <article class="credential"><span class="credential-year">DEC 2025</span><h4>Introduction to Cybersecurity</h4><p>Cisco</p></article>
-          <p class="small-note">Add any additional certificates, issuing organisations and completion dates before publishing.</p>
+      </div>
+    </section>
+
+    <section class="section section-white" id="projects">
+      <div class="container">
+        <p class="eyebrow">03 / PRACTICAL LEARNING</p>
+        <h2>Selected lab projects</h2>
+        <p class="section-lead">Hands-on learning projects built in a personal lab environment. These are learning projects, not professional client engagements.</p>
+        <div class="project-grid">
+          <article class="project-card"><div class="project-visual visual-server"><span>PROXMOX</span><div class="server-stack"><i></i><i></i><i></i></div></div><div class="project-body"><p class="project-type">VIRTUALISATION</p><h3>Proxmox home lab</h3><p>Set up a virtualisation environment to host and manage virtual machines for infrastructure and cybersecurity learning.</p></div></article>
+          <article class="project-card"><div class="project-visual visual-network"><span>ACTIVE DIRECTORY</span><div class="network-nodes"><i></i><i></i><i></i><i></i><b></b></div></div><div class="project-body"><p class="project-type">SYSTEMS ADMINISTRATION</p><h3>Windows Server &amp; Active Directory</h3><p>Built a Windows Server 2022 domain environment and joined a Windows 11 client to practise domain and user management concepts.</p></div></article>
+          <article class="project-card"><div class="project-visual visual-terminal"><span>LINUX LAB</span><pre>$ kali-linux
+$ learn
+$ investigate</pre></div><div class="project-body"><p class="project-type">CYBERSECURITY LEARNING</p><h3>Kali Linux learning environment</h3><p>Use a virtualised Kali Linux environment to develop familiarity with security tools and guided cybersecurity lab exercises.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container narrow">
+        <p class="eyebrow">04 / EXPERIENCE</p>
+        <h2>National Service experience</h2>
+        <div class="timeline">
+          <div class="timeline-date">CORONATION INSURANCE</div>
+          <div><h3>Operations Support</h3><p class="muted">National Service</p><p>Supported day-to-day insurance operations, including processing business for policy issuance and payment processing, handling third-party policy processes, preparing client documentation, printing comprehensive insurance certificates, and maintaining files and records.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="education">
+      <div class="container narrow">
+        <p class="eyebrow">05 / EDUCATION</p>
+        <h2>Academic background</h2>
+        <div class="education-item"><div><h3>MSc Cybersecurity &amp; Digital Forensics</h3><p>Ghana Institute of Management and Public Administration (GIMPA)</p></div><span>2026</span></div>
+        <div class="education-item"><div><h3>BSc Computer Science</h3><p>Regent University College of Science and Technology</p></div><span>Dec 2025</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <p class="eyebrow">06 / PROFESSIONAL DEVELOPMENT</p>
+        <h2>Certifications</h2>
+        <p class="section-lead">Professional learning across data analytics, cybersecurity, workplace performance, leadership and digital presence.</p>
+        <div class="cert-grid">
+          <article class="cert-card"><span class="cert-mark">01</span><div><h3>Google Data Analytics Professional Certificate</h3><p>Google</p></div></article>
+          <article class="cert-card"><span class="cert-mark">02</span><div><h3>Introduction to Cybersecurity</h3><p>Cisco</p></div></article>
+          <article class="cert-card"><span class="cert-mark">03</span><div><h3>Workplace Performance &amp; Basic Project Management</h3><p>CareerEssentials</p></div></article>
+          <article class="cert-card"><span class="cert-mark">04</span><div><h3>Leadership &amp; Ethics</h3><p>CareerEssentials</p></div></article>
+          <article class="cert-card"><span class="cert-mark">05</span><div><h3>Digital Identity &amp; Online Presence</h3><p>CareerEssentials</p></div></article>
         </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
-      <div class="section contact-inner"><div><p class="eyebrow">06 / CONTACT</p><h2>Let's connect.</h2><p class="contact-copy">I am interested in opportunities where I can contribute, keep learning and grow across IT and cybersecurity.</p></div>
+      <div class="container contact-inner">
+        <div><p class="eyebrow light">07 / CONTACT</p><h2>Let's connect.</h2><p>I'm open to conversations about IT, cybersecurity, digital forensics and relevant career opportunities.</p></div>
         <div class="contact-links">
-          <a href="mailto:YOUR-EMAIL@example.com" class="contact-link"><span>Email</span><b>YOUR-EMAIL@example.com ↗</b></a>
-          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noreferrer" class="contact-link"><span>LinkedIn</span><b>Connect with me ↗</b></a>
-          <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noreferrer" class="contact-link"><span>GitHub</span><b>View my projects ↗</b></a>
+          <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noopener">LinkedIn profile</a>
+          <a href="https://github.com/Jeremiah-Koomson" target="_blank" rel="noopener">GitHub profile</a>
         </div>
+        <p class="placeholder-note">Before sharing your website, replace the email and LinkedIn placeholders in index.html with your actual details.</p>
       </div>
     </section>
   </main>
-
-  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">Y</span><span>Your Name<span class="brand-dot">.</span></span></a><span>© <span id="year"></span> Your Full Name. Built with care.</span><a href="#home">Back to top ↑</a></footer>
+  <footer class="footer"><div class="container">© <span id="year"></span> Jeremiah Koomson. Built with HTML, CSS and JavaScript.</div></footer>
   <script src="assets/script.js"></script>
 </body>
 </html>

@@ -1,32 +1,21 @@
-# Personal Portfolio Website
+# Jeremiah Koomson Portfolio
 
-A responsive, static portfolio website designed for GitHub Pages.
+A responsive static portfolio website built with HTML, CSS and JavaScript for GitHub Pages.
 
-## Before publishing
+## Publish or update on GitHub Pages
 
-Replace these placeholders in `index.html`:
-- `Your Full Name` and `Your Name` with your preferred professional name.
+1. Extract the ZIP file.
+2. Open the `jeremiah_portfolio_update` folder.
+3. Upload the contents of that folder (not the folder itself) to the root of `Jeremiah-Koomson.github.io`.
+4. Commit the changes to the `main` branch.
+5. In the repository, open **Settings → Pages** and select **Deploy from a branch**, `main`, and `/(root)`.
+
+The website should be available at https://jeremiah-koomson.github.io after GitHub Pages finishes deploying.
+
+## Personalise before sharing
+
+In `index.html`, replace:
 - `YOUR-EMAIL@example.com` with your professional email address.
-- `YOUR-LINKEDIN` with your LinkedIn profile slug.
-- `YOUR-GITHUB` with your GitHub username.
-- Replace the `Y` brand mark with your initials if desired.
+- `YOUR-LINKEDIN` with your LinkedIn profile username.
 
-Review the education section after your MSc has officially been awarded. Add any additional certificates you hold. Add only projects and practical exercises you have actually completed. You can add a PDF CV to the repository and link it from the page when ready.
-
-## Publish free with GitHub Pages
-
-1. Create or sign in to a GitHub account.
-2. Create a new **public** repository named exactly `YOUR-GITHUB-USERNAME.github.io`.
-3. Upload all files and folders from this project to the repository root. Keep `index.html` at the root.
-4. In the repository, open **Settings → Pages**.
-5. Under Build and deployment, choose **Deploy from a branch**.
-6. Select branch `main` and folder `/ (root)`, then Save.
-7. Wait for GitHub Pages to deploy. Your website will be at `https://YOUR-GITHUB-USERNAME.github.io`.
-
-GitHub Pages documentation: https://docs.github.com/en/pages
-
-## Accuracy notes
-
-The current draft reflects information already provided: BSc Computer Science at Regent University College of Science and Technology (December 2025); MSc Cybersecurity & Digital Forensics at GIMPA, final-semester status at the time this draft was prepared; Google Data Analytics Professional Certificate; Cisco Introduction to Cybersecurity; Coronation insurance operations National Service; and the Proxmox, Windows Server/Active Directory and Kali Linux learning environments.
-
-The site does not claim professional cybersecurity employment, SOC experience, completed forensic investigations, or certifications not confirmed. Update any details that have changed before making the site public.
+The site currently lists the qualifications and certificates supplied for the portfolio. Add certificate dates or additional credentials only after verifying their exact details.

@@ -1,133 +1,397 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio of Jeremiah Koomson, Computer Science graduate with an interest in Cybersecurity, Digital Forensics and IT Operations.">
-  <title>Jeremiah Koomson | IT & Cybersecurity Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jeremiah Koomson | Computer Science, Cybersecurity and IT Operations">
+<title>Jeremiah Koomson | Professional Portfolio</title>
+<style>
+:root {
+  --navy:#17263b;
+  --blue:#2563eb;
+  --pale:#f4f7fc;
+  --text:#526176;
+  --border:#e3e9f1;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  margin:0;
+  color:var(--navy);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.7;
+}
+a {text-decoration:none}
+.container {width:min(1100px,90%);margin:auto}
+header {
+  position:sticky;top:0;background:#ffffffed;
+  border-bottom:1px solid var(--border);z-index:10;
+}
+nav {
+  min-height:72px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
+}
+.logo {font-size:25px;font-weight:800;color:var(--navy)}
+.logo span {color:var(--blue)}
+nav .links {display:flex;gap:22px;flex-wrap:wrap}
+nav a {color:#46566d;font-size:14px;font-weight:600}
+nav a:hover {color:var(--blue)}
+.hero {background:var(--pale);padding:85px 0}
+.hero-grid {
+  display:grid;grid-template-columns:1.3fr .7fr;
+  align-items:center;gap:65px;
+}
+.eyebrow {
+  color:var(--blue);font-size:12px;
+  font-weight:bold;letter-spacing:2px;
+}
+h1 {font-size:clamp(45px,7vw,76px);line-height:1.05;margin:18px 0}
+h1 span {color:var(--blue)}
+h2 {font-size:clamp(27px,4vw,39px);line-height:1.2;margin:8px 0 22px}
+h3 {margin:0 0 8px}
+p {color:var(--text)}
+.hero-lead {font-size:21px;color:#30445f}
+.buttons {display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn {
+  padding:12px 19px;border-radius:7px;
+  font-weight:bold;display:inline-block;font-size:14px;
+}
+.primary {background:var(--blue);color:white}
+.secondary {border:1px solid #cbd5e1;color:var(--navy);background:white}
+.photo-card {
+  background:white;padding:14px;border:1px solid var(--border);
+  border-radius:18px;box-shadow:0 18px 45px #17263b16;
+}
+.photo-placeholder {
+  min-height:390px;border-radius:12px;background:#eaf0f8;
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;text-align:center;color:#64748b;
+  border:2px dashed #aabbd1;padding:20px;
+}
+.photo-placeholder .silhouette {
+  width:115px;height:115px;border-radius:50%;
+  background:#c5d2e4;margin-bottom:20px;position:relative;
+}
+.photo-placeholder .silhouette:after {
+  content:"";position:absolute;width:180px;height:95px;
+  border-radius:100px 100px 20px 20px;
+  background:#c5d2e4;top:120px;left:50%;transform:translateX(-50%);
+}
+.photo-placeholder strong {margin-top:110px;font-size:12px;letter-spacing:1px}
+.photo-placeholder small {margin-top:5px}
+section {padding:80px 0}
+.soft {background:var(--pale)}
+.intro {max-width:850px}
+.section-heading {
+  display:flex;justify-content:space-between;
+  align-items:end;gap:30px;margin-bottom:35px;
+}
+.section-heading p {max-width:390px}
+.timeline {border-top:1px solid var(--border)}
+.job {
+  display:grid;grid-template-columns:190px 1fr;
+  gap:25px;padding:25px 0;border-bottom:1px solid var(--border);
+}
+.date {color:var(--blue);font-size:14px;font-weight:bold}
+.company {font-weight:bold;color:#718096}
+ul {color:var(--text);padding-left:20px}
+.cards {display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card {
+  background:white;border:1px solid var(--border);
+  padding:24px;border-radius:12px;
+}
+.card p {font-size:14px;margin-bottom:0}
+.number {font-size:12px;color:var(--blue);font-weight:bold}
+.tags {display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
+.tags span {
+  background:#edf3ff;color:#315b9d;
+  padding:4px 9px;border-radius:20px;font-size:11px;
+}
+.two-col {display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.education-item,.cert-item {
+  padding:16px 0;border-bottom:1px solid var(--border);
+}
+.education-item small {color:#718096}
+.cert-item strong,.cert-item span {display:block}
+.cert-item span {font-size:13px;color:#718096}
+.pills {display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.pills span {
+  background:white;border:1px solid var(--border);
+  padding:9px 14px;border-radius:30px;font-size:13px;color:#46566d;
+}
+.contact {background:var(--navy);color:white}
+.contact h2 {max-width:600px}
+.contact p {color:#c2ccda}
+.contact a {color:white}
+.contact-box {
+  background:#213650;padding:25px;border-radius:12px;
+  border:1px solid #3a506d;
+}
+.contact-box small {display:block;color:#a9bdd6;margin-top:15px}
+footer {background:#101d2e;color:#aab7c9;padding:20px 0;font-size:13px}
+footer .container {display:flex;justify-content:space-between;gap:15px}
+@media(max-width:800px) {
+  nav {padding:15px 0;align-items:flex-start;flex-direction:column}
+  nav .links {gap:13px}
+  .hero-grid,.two-col {grid-template-columns:1fr}
+  .photo-card {max-width:330px;margin:auto}
+  .cards {grid-template-columns:1fr 1fr}
+  .section-heading {display:block}
+}
+@media(max-width:550px) {
+  .cards {grid-template-columns:1fr}
+  .job {grid-template-columns:1fr;gap:5px}
+  section {padding:60px 0}
+  .hero {padding:60px 0}
+  footer .container {flex-direction:column}
+}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home">JK<span>.</span></a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
-        <a href="#experience">Experience</a><a href="#certifications">Certifications</a><a class="nav-cta" href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero container" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">COMPUTER SCIENCE · CYBERSECURITY · IT OPERATIONS</p>
-        <h1>Jeremiah<br><span>Koomson</span></h1>
-        <p class="hero-lead">Building practical knowledge across IT operations, cybersecurity and digital forensics.</p>
-        <p class="hero-text">I am a Computer Science graduate and MSc Cybersecurity &amp; Digital Forensics student with an interest in secure systems, technical operations, networking and digital investigations.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">Explore my work</a>
-          <a class="button secondary" href="#contact">Get in touch</a>
-        </div>
-      </div>
-      <aside class="hero-panel">
-        <div class="panel-top"><span class="status-dot"></span> AREAS OF INTEREST</div>
-        <div class="focus-item"><span>01</span><div><strong>Digital Forensics</strong><small>Evidence handling and digital investigations</small></div></div>
-        <div class="focus-item"><span>02</span><div><strong>Cybersecurity</strong><small>Security fundamentals and practical learning</small></div></div>
-        <div class="focus-item"><span>03</span><div><strong>IT Operations</strong><small>Systems, networks and technical support</small></div></div>
-        <div class="panel-foot">Curious by nature. Practical by approach.</div>
-      </aside>
-    </section>
+<header>
+<nav class="container">
+  <a class="logo" href="#home">JK<span>.</span></a>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+</header>
 
-    <section class="section section-white" id="about">
-      <div class="container narrow">
-        <p class="eyebrow">01 / ABOUT</p>
-        <h2>Technology, systems and continuous learning.</h2>
-        <p class="section-lead">My academic background in Computer Science and postgraduate studies in Cybersecurity &amp; Digital Forensics have shaped my interest in how systems work, how they can be secured, and how digital evidence can be examined responsibly.</p>
-        <p>I enjoy building practical skills through hands-on labs and structured learning. I am interested in opportunities where I can contribute to IT operations, technical support, networking, cybersecurity and digital forensics while continuing to develop professionally.</p>
-      </div>
-    </section>
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+  <div>
+    <div class="eyebrow">COMPUTER SCIENCE · CYBERSECURITY · IT OPERATIONS</div>
+    <h1>Jeremiah<br><span>Koomson</span></h1>
+    <p class="hero-lead">Developing practical skills across cybersecurity, digital forensics and IT operations.</p>
+    <p>I am a Computer Science graduate pursuing an MSc in Cybersecurity &amp; Digital Forensics at GIMPA. I have a strong interest in technology, system administration, network security and digital investigations.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#contact">Contact Me</a>
+      <a class="btn secondary" href="#experience">View Experience</a>
+    </div>
+    <p>Based in Kasoa, Ghana</p>
+  </div>
 
-    <section class="section" id="skills">
-      <div class="container">
-        <p class="eyebrow">02 / SKILLS &amp; INTERESTS</p>
-        <h2>Areas I am developing</h2>
-        <div class="skill-grid">
-          <article class="skill-card"><div class="card-number">01</div><h3>IT &amp; Systems</h3><p>Windows Server fundamentals, Active Directory lab administration, virtualisation and operating system concepts.</p></article>
-          <article class="skill-card"><div class="card-number">02</div><h3>Networking</h3><p>Network fundamentals, addressing, switching concepts, connectivity and troubleshooting practice.</p></article>
-          <article class="skill-card"><div class="card-number">03</div><h3>Cybersecurity</h3><p>Security fundamentals, threat awareness, access management and practical security learning.</p></article>
-          <article class="skill-card"><div class="card-number">04</div><h3>Digital Forensics</h3><p>Academic and practical development in digital investigations, evidence concepts and forensic workflows.</p></article>
-        </div>
-      </div>
-    </section>
+  <div class="photo-card">
+    <div class="photo-placeholder">
+      <div class="silhouette"></div>
+      <strong>YOUR PROFESSIONAL PHOTO</strong>
+      <small>Replace this placeholder with your photograph</small>
+    </div>
+  </div>
+</div>
+</section>
 
-    <section class="section section-white" id="projects">
-      <div class="container">
-        <p class="eyebrow">03 / PRACTICAL LEARNING</p>
-        <h2>Selected lab projects</h2>
-        <p class="section-lead">Hands-on learning projects built in a personal lab environment. These are learning projects, not professional client engagements.</p>
-        <div class="project-grid">
-          <article class="project-card"><div class="project-visual visual-server"><span>PROXMOX</span><div class="server-stack"><i></i><i></i><i></i></div></div><div class="project-body"><p class="project-type">VIRTUALISATION</p><h3>Proxmox home lab</h3><p>Set up a virtualisation environment to host and manage virtual machines for infrastructure and cybersecurity learning.</p></div></article>
-          <article class="project-card"><div class="project-visual visual-network"><span>ACTIVE DIRECTORY</span><div class="network-nodes"><i></i><i></i><i></i><i></i><b></b></div></div><div class="project-body"><p class="project-type">SYSTEMS ADMINISTRATION</p><h3>Windows Server &amp; Active Directory</h3><p>Built a Windows Server 2022 domain environment and joined a Windows 11 client to practise domain and user management concepts.</p></div></article>
-          <article class="project-card"><div class="project-visual visual-terminal"><span>LINUX LAB</span><pre>$ kali-linux
-$ learn
-$ investigate</pre></div><div class="project-body"><p class="project-type">CYBERSECURITY LEARNING</p><h3>Kali Linux learning environment</h3><p>Use a virtualised Kali Linux environment to develop familiarity with security tools and guided cybersecurity lab exercises.</p></div></article>
-        </div>
-      </div>
-    </section>
+<section id="about">
+<div class="container intro">
+  <div class="eyebrow">ABOUT ME</div>
+  <h2>Technology, practical experience and continuous learning.</h2>
+  <p>My background combines academic training in Computer Science with experience in IT and administrative support, field supervision, customer service and team leadership. I value accuracy, responsibility, communication and learning through practical work.</p>
+</div>
+</section>
 
-    <section class="section" id="experience">
-      <div class="container narrow">
-        <p class="eyebrow">04 / EXPERIENCE</p>
-        <h2>National Service experience</h2>
-        <div class="timeline">
-          <div class="timeline-date">CORONATION INSURANCE</div>
-          <div><h3>Operations Support</h3><p class="muted">National Service</p><p>Supported day-to-day insurance operations, including processing business for policy issuance and payment processing, handling third-party policy processes, preparing client documentation, printing comprehensive insurance certificates, and maintaining files and records.</p></div>
-        </div>
-      </div>
-    </section>
+<section class="soft" id="experience">
+<div class="container">
+  <div class="eyebrow">CAREER HISTORY</div>
+  <h2>Professional Experience</h2>
+  <div class="timeline">
 
-    <section class="section section-white" id="education">
-      <div class="container narrow">
-        <p class="eyebrow">05 / EDUCATION</p>
-        <h2>Academic background</h2>
-        <div class="education-item"><div><h3>MSc Cybersecurity &amp; Digital Forensics</h3><p>Ghana Institute of Management and Public Administration (GIMPA)</p></div><span>2026</span></div>
-        <div class="education-item"><div><h3>BSc Computer Science</h3><p>Regent University College of Science and Technology</p></div><span>Dec 2025</span></div>
+    <article class="job">
+      <div class="date">National Service</div>
+      <div>
+        <h3>National Service Personnel</h3>
+        <div class="company">Coronation Insurance · Ghana</div>
+        <p>Supported insurance operations and administrative processes, including policy documentation, third-party policy processes, certificate printing, filing and records management.</p>
       </div>
-    </section>
+    </article>
 
-    <section class="section" id="certifications">
-      <div class="container">
-        <p class="eyebrow">06 / PROFESSIONAL DEVELOPMENT</p>
-        <h2>Certifications</h2>
-        <p class="section-lead">Professional learning across data analytics, cybersecurity, workplace performance, leadership and digital presence.</p>
-        <div class="cert-grid">
-          <article class="cert-card"><span class="cert-mark">01</span><div><h3>Google Data Analytics Professional Certificate</h3><p>Google</p></div></article>
-          <article class="cert-card"><span class="cert-mark">02</span><div><h3>Introduction to Cybersecurity</h3><p>Cisco</p></div></article>
-          <article class="cert-card"><span class="cert-mark">03</span><div><h3>Workplace Performance &amp; Basic Project Management</h3><p>CareerEssentials</p></div></article>
-          <article class="cert-card"><span class="cert-mark">04</span><div><h3>Leadership &amp; Ethics</h3><p>CareerEssentials</p></div></article>
-          <article class="cert-card"><span class="cert-mark">05</span><div><h3>Digital Identity &amp; Online Presence</h3><p>CareerEssentials</p></div></article>
-        </div>
+    <article class="job">
+      <div class="date">May – July 2024</div>
+      <div>
+        <h3>Intern</h3>
+        <div class="company">Ghana Revenue Authority</div>
+        <ul>
+          <li>Assisted with IT and administrative operations.</li>
+          <li>Supported staff with system usage, data handling and record management.</li>
+          <li>Gained experience within a public-sector organization.</li>
+        </ul>
       </div>
-    </section>
+    </article>
 
-    <section class="contact-section" id="contact">
-      <div class="container contact-inner">
-        <div><p class="eyebrow light">07 / CONTACT</p><h2>Let's connect.</h2><p>I'm open to conversations about IT, cybersecurity, digital forensics and relevant career opportunities.</p></div>
-        <div class="contact-links">
-          <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
-          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noopener">LinkedIn profile</a>
-          <a href="https://github.com/Jeremiah-Koomson" target="_blank" rel="noopener">GitHub profile</a>
-        </div>
-        <p class="placeholder-note">Before sharing your website, replace the email and LinkedIn placeholders in index.html with your actual details.</p>
+    <article class="job">
+      <div class="date">February – April 2024</div>
+      <div>
+        <h3>Field Supervisor, 2024 Integrated Business Establishment Survey</h3>
+        <div class="company">Ghana Statistical Service</div>
+        <ul>
+          <li>Supervised field officers and coordinated daily activities.</li>
+          <li>Ensured accurate data collection and timely reporting.</li>
+          <li>Enforced compliance with survey guidelines.</li>
+        </ul>
       </div>
-    </section>
-  </main>
-  <footer class="footer"><div class="container">© <span id="year"></span> Jeremiah Koomson. Built with HTML, CSS and JavaScript.</div></footer>
-  <script src="assets/script.js"></script>
+    </article>
+
+    <article class="job">
+      <div class="date">October 2016 – January 2017</div>
+      <div>
+        <h3>Business Advisor</h3>
+        <div class="company">AirtelTigo</div>
+        <ul>
+          <li>Provided customer support and product guidance.</li>
+          <li>Assisted in service activation and client engagement.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="date">December 2016</div>
+      <div>
+        <h3>Presiding Officer, 2016 Presidential and Parliamentary Elections</h3>
+        <div class="company">Electoral Commission of Ghana</div>
+        <ul>
+          <li>Managed polling station operations.</li>
+          <li>Ensured order, transparency and adherence to electoral procedures.</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+  <div class="eyebrow">CAPABILITIES</div>
+  <h2>Skills &amp; Knowledge</h2>
+  <div class="cards">
+    <article class="card"><div class="number">01</div><h3>Systems Administration</h3><p>Windows and Linux system administration, troubleshooting and IT support.</p></article>
+    <article class="card"><div class="number">02</div><h3>Networking &amp; Security</h3><p>Network fundamentals, network security and introductory network analysis.</p></article>
+    <article class="card"><div class="number">03</div><h3>Digital Investigation</h3><p>Basic OSINT techniques and developing knowledge in digital forensics.</p></article>
+    <article class="card"><div class="number">04</div><h3>Productivity &amp; Design</h3><p>Microsoft Office, Adobe Photoshop and Canva.</p></article>
+    <article class="card"><div class="number">05</div><h3>Technical Operations</h3><p>Audio-visual systems and sound systems.</p></article>
+    <article class="card"><div class="number">06</div><h3>Professional Skills</h3><p>Teamwork, coordination, documentation and customer support.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="soft" id="projects">
+<div class="container">
+  <div class="eyebrow">PRACTICAL LEARNING</div>
+  <h2>Projects &amp; Home Lab</h2>
+  <p>Personal lab activities used to develop practical IT and cybersecurity knowledge.</p>
+  <div class="cards">
+    <article class="card">
+      <div class="number">PERSONAL LAB · 01</div>
+      <h3>Proxmox Virtualisation</h3>
+      <p>Configured a personal virtualisation environment to host and manage virtual machines for IT and cybersecurity learning.</p>
+      <div class="tags"><span>Proxmox</span><span>Virtualisation</span></div>
+    </article>
+    <article class="card">
+      <div class="number">PERSONAL LAB · 02</div>
+      <h3>Windows Server &amp; Active Directory</h3>
+      <p>Built a Windows Server 2022 domain environment and connected a Windows 11 client to practise directory services and basic administration.</p>
+      <div class="tags"><span>Windows Server</span><span>Active Directory</span></div>
+    </article>
+    <article class="card">
+      <div class="number">PERSONAL LAB · 03</div>
+      <h3>Kali Linux Environment</h3>
+      <p>Use Kali Linux virtual machines to practise networking, security tools and authorised cybersecurity exercises.</p>
+      <div class="tags"><span>Kali Linux</span><span>VMware</span></div>
+    </article>
+  </div>
+  <p><small>These are personal learning activities, not professional client engagements.</small></p>
+</div>
+</section>
+
+<section id="education">
+<div class="container two-col">
+  <div>
+    <div class="eyebrow">ACADEMIC BACKGROUND</div>
+    <h2>Education</h2>
+    <div class="education-item">
+      <div class="number">IN PROGRESS</div>
+      <h3>MSc Cybersecurity &amp; Digital Forensics</h3>
+      <p>Ghana Institute of Management and Public Administration (GIMPA)</p>
+    </div>
+    <div class="education-item">
+      <div class="number">2022 – 2025</div>
+      <h3>BSc Computer Science</h3>
+      <p>Regent University College of Science and Technology, Ghana</p>
+      <small>Relevant courses: Networks and Data Communication, Data Structures and Algorithms, Computer Architecture, Computer Security, Mathematical Modeling and Simulation, Calculus and Cloud Computing.</small>
+    </div>
+    <div class="education-item">
+      <div class="number">2012 – 2015</div>
+      <h3>General Science</h3>
+      <p>Collins Senior High School, Ghana</p>
+      <small>Physics, Chemistry, Elective Mathematics and Biology.</small>
+    </div>
+  </div>
+
+  <div>
+    <div class="eyebrow">CONTINUOUS LEARNING</div>
+    <h2>Certifications</h2>
+    <div class="cert-item"><strong>Introduction to Cybersecurity</strong><span>Cisco Networking Academy · December 2025</span></div>
+    <div class="cert-item"><strong>Introduction to OSINT</strong><span>Security Blue Team · 2026</span></div>
+    <div class="cert-item"><strong>Introduction to Network Analysis</strong><span>Security Blue Team · 2026</span></div>
+    <div class="cert-item"><strong>Google Data Analytics Professional Certificate</strong><span>Google</span></div>
+    <div class="cert-item"><strong>Workplace Performance &amp; Basic Project Management</strong><span>CareerEssentials</span></div>
+    <div class="cert-item"><strong>Leadership &amp; Ethics</strong><span>CareerEssentials</span></div>
+    <div class="cert-item"><strong>Digital Identity &amp; Online Presence</strong><span>CareerEssentials</span></div>
+  </div>
+</div>
+</section>
+
+<section class="soft">
+<div class="container">
+  <div class="eyebrow">LEADERSHIP &amp; SERVICE</div>
+  <h2>Community Involvement</h2>
+  <p>Leadership and service responsibilities at Seekers of the Truth Ministries, Kasoa.</p>
+  <div class="pills">
+    <span>Deacon</span>
+    <span>Director, Music Ministry</span>
+    <span>Head, Sound &amp; Audio-Visual</span>
+    <span>Head, IT Department</span>
+    <span>Youth President</span>
+    <span>Events Committee Leader</span>
+    <span>Prayer Committee Member</span>
+  </div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container two-col">
+  <div>
+    <div class="eyebrow" style="color:#91b8ff">LET'S CONNECT</div>
+    <h2>Open to learning, collaboration and new opportunities.</h2>
+    <p>For professional enquiries and conversations around IT, cybersecurity and digital forensics, feel free to get in touch.</p>
+  </div>
+  <div class="contact-box">
+    <small>EMAIL</small>
+    <a href="mailto:koomsonjere@gmail.com">koomsonjere@gmail.com</a>
+    <small>LOCATION</small>
+    <p>Kasoa, Ghana</p>
+    <small>LINKEDIN</small>
+    <p>LinkedIn profile link to be added after URL verification.</p>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+  <span>© <span id="year"></span> Jeremiah Koomson</span>
+  <span>Always learning. Always developing.</span>
+</div>
+</footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
